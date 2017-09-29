@@ -8,7 +8,10 @@
     pattern="apple" 
     ngModel #firstName="ngModel" 
     (change)="log(firstName)" 
-    name="firstName" id="firstName" type="text" class="form-control">
+    name="firstName" 
+    id="firstName" 
+    type="text" 
+    class="form-control">
     <div *ngIf="firstName.touched && !firstName.valid" class="alert alert-danger">
       <div *ngIf="firstName.errors.required">
         First name is required.
